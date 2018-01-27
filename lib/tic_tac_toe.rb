@@ -27,7 +27,6 @@ end
 def turn(board, index, current_player)
   if valid_move?(board, index)
     board = move(board, index, current_player)
-    display_board(board)
   else
     puts "invalid"
     index = gets.strip
